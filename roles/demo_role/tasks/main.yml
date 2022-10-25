@@ -1,0 +1,5 @@
+---
+# tasks file for demo_role
+- name: Run demo module
+  demo_module:
+    msg: "Hello world"

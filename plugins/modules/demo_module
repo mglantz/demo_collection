@@ -1,0 +1,14 @@
+#!/bin/sh
+# Module which creates the file: /tmp/module-file
+set -e
+# First argument is the arguments file
+source ${1}
+# Create file if it doesn't exist
+if [ ! -f /tmp/demo-module ]
+then
+	touch /tmp/demo-module
+	echo {\"changed\": true, \"msg\": \"Created /tmp/demo-module. ${msg}\"}
+else
+	echo {\"changed\": false, \"msg\": \"Already created /tmp/demo-module. ${msg}\"}
+fi
+exit 0
