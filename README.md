@@ -1,2 +1,3 @@
-# demo_collection
-Ansible Collection Demo
+# Ansible Collection - mglantz.demo_collection
+
+Documentation for the collection.
